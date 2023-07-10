@@ -1,0 +1,15 @@
+Z:\ServerStudy\Rookiss\Server\DummyClient\bin\Debug\net6.0\DummyClient.exe
+Z:\ServerStudy\Rookiss\Server\DummyClient\bin\Debug\net6.0\DummyClient.deps.json
+Z:\ServerStudy\Rookiss\Server\DummyClient\bin\Debug\net6.0\DummyClient.runtimeconfig.json
+Z:\ServerStudy\Rookiss\Server\DummyClient\bin\Debug\net6.0\DummyClient.dll
+Z:\ServerStudy\Rookiss\Server\DummyClient\bin\Debug\net6.0\DummyClient.pdb
+Z:\ServerStudy\Rookiss\Server\DummyClient\obj\Debug\net6.0\DummyClient.csproj.AssemblyReference.cache
+Z:\ServerStudy\Rookiss\Server\DummyClient\obj\Debug\net6.0\DummyClient.GeneratedMSBuildEditorConfig.editorconfig
+Z:\ServerStudy\Rookiss\Server\DummyClient\obj\Debug\net6.0\DummyClient.AssemblyInfoInputs.cache
+Z:\ServerStudy\Rookiss\Server\DummyClient\obj\Debug\net6.0\DummyClient.AssemblyInfo.cs
+Z:\ServerStudy\Rookiss\Server\DummyClient\obj\Debug\net6.0\DummyClient.csproj.CoreCompileInputs.cache
+Z:\ServerStudy\Rookiss\Server\DummyClient\obj\Debug\net6.0\DummyClient.dll
+Z:\ServerStudy\Rookiss\Server\DummyClient\obj\Debug\net6.0\refint\DummyClient.dll
+Z:\ServerStudy\Rookiss\Server\DummyClient\obj\Debug\net6.0\DummyClient.pdb
+Z:\ServerStudy\Rookiss\Server\DummyClient\obj\Debug\net6.0\DummyClient.genruntimeconfig.cache
+Z:\ServerStudy\Rookiss\Server\DummyClient\obj\Debug\net6.0\ref\DummyClient.dll
