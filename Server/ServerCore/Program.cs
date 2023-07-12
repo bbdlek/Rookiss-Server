@@ -4,30 +4,38 @@ namespace ServerCore
 {
     class Program
     {
-        int _answer;
-        bool _complete;
+        static int number = 0;
 
-        void A()
+        static void Thread_1()
         {
-            _answer = 123;
-            Thread.MemoryBarrier(); // Barrier 1
-            _complete = true;
-            Thread.MemoryBarrier(); // Barrier 2
+            // atomic = 원자성
+
+
+            for(int i = 0; i < 1000000; i++)
+            {
+                // All or Nothing
+                Interlocked.Increment(ref number); // 1
+            }
         }
 
-        void B()
+        static void Thread_2()
         {
-            Thread.MemoryBarrier(); // Barrier 3
-            if (_complete)
+            for (int i = 0; i < 1000000; i++)
             {
-                Thread.MemoryBarrier(); // Barrier 4
-                Console.WriteLine(_answer);
+                Interlocked.Decrement(ref number); // 0
             }
         }
 
         static void Main(string[] args)
         {
-            
+            Task t1 = new Task(Thread_1);
+            Task t2 = new Task(Thread_2);
+            t1.Start();
+            t2.Start();
+
+            Task.WaitAll(t1, t2);
+
+            Console.WriteLine(number);
         }
     }
 }
