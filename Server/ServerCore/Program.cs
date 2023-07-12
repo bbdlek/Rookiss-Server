@@ -5,24 +5,33 @@ namespace ServerCore
     class Program
     {
         static int number = 0;
+        static object _obj = new object();
 
         static void Thread_1()
         {
-            // atomic = 원자성
-
-
             for(int i = 0; i < 1000000; i++)
             {
-                // All or Nothing
-                Interlocked.Increment(ref number); // 1
+                // 상호배제 Mutual Exclusive
+
+                // CriticalSection std::mutex
+
+                lock (_obj)
+                {
+                    number++;
+                }
             }
         }
+
+        // 데드락 DeadLock
 
         static void Thread_2()
         {
             for (int i = 0; i < 1000000; i++)
             {
-                Interlocked.Decrement(ref number); // 0
+                lock (_obj)
+                {
+                    number--;
+                }
             }
         }
 
